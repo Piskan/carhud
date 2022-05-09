@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="ana.css">
+  <title>Document</title>
+</head>
+<body style= "display:none;" id = "mybody">
+  <div id="wrapper">
+    <svg id="meter">
+
+      <circle id="atess" r="120" cx="50%" cy="50%" stroke="white"
+      stroke-width="11" stroke-dasharray="0, 943" fill="none">
+      </circle>
+      <circle id="atess2" r="120" cx="50%" cy="50%"
+stroke="white" stroke-width="13"
+stroke-dasharray="0, 943" fill="none">
+</circle>
+    </svg>
+  </div>
+  <div id="wrapper1">
+    <svg id="meter1">
+
+      <circle id="siyah" r="120" cx="50%" cy="50%" stroke="rgba(0, 0, 0, 0.864)"
+      stroke-width="13" stroke-dasharray="500, 943" fill="none">
+      </circle>
+    </svg>
+  </div>
+
+  <div id="wrapper3">
+    <svg id="meter3">
+
+      <circle id="icibre" r="105" cx="40%" cy="49%" stroke="#ffce00"
+      stroke-width="5" stroke-dasharray="480, 943" fill="none">
+      </circle>
+    </svg>
+  </div>
+
+
+  
+  <svg height="0" width="0">
+  
+    <filter id='prupl' color-interpolation-filters="sRGB" >
+      <feDropShadow dx="3" dy="3" stdDeviation="9" flood-opacity="0.5" flood-color="#ffce00"/>
+    </filter>
+    
+  </svg>
+  <svg height="0" width="0">
+  
+    <filter id='shadow' color-interpolation-filters="sRGB" >
+      <feDropShadow dx="3" dy="3" stdDeviation="9" flood-opacity="0.5" />
+    </filter>
+    
+  </svg>
+
+
+
+
+   <div class="kmyazdir"><span id = "kmtext">025</span>
+    <div class="kmh">KMH</div>
+    <div class="mesafe" id ="rpmtext">0.22 mi</div>
+  </div>
+
+   <div class="konumlar"><span style="margin-left: 10px;font-size: 13px;  font-family:roboto-regular; " id = "adresbilgisi">Los Santos International Airport</span><span style="margin-left: 10px; margin-right: 10px; font-size: 15px; font-weight: 700;  font-family:roboto-regular;" id = "adresyon">SW</span></div>
+
+   <div class="elemanlar">
+    &nbsp;
+    <i class="fas fa-gas-pump" style ="color:white;"></i>&nbsp;&nbsp;&nbsp;
+		<i class="fas fa-gas-pump" id = "ustpompa100" style ="display:none; color:#ffce00; position:absolute; left:18px; top:9px; clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);"></i>
+	<i class="fas fa-gas-pump" id = "ustpompa50" style =" display:none;color:#ffce00; position:absolute; left:18px; top:9px; clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0 100%);"></i>
+		<i class="fas fa-gas-pump" id = "ustpompa30" style ="display:none; color:#ffce00; position:absolute; left:18px; top:9px; clip-path: polygon(0 65%, 100% 65%, 100% 100%, 0 100%);"></i>
+  
+    <i class="fas fa-bacon" id = "kemer"></i>
+   </div>
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" type="text/javascript"></script>
+<script src="ana.js"></script>
+
+</html>

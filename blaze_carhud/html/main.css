@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@500;600;700;800&family=Roboto:wght@400;700;900&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.4.1/css/ionicons.min.css");
+
+* > i {
+  font-size: 20px;
+  margin: 0 5px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  
+  user-select: none;
+  font-weight: 900;
+}
+
+#nevarlan
+{
+  fill: rgba(255, 255, 255);
+  
+
+}
+.barIcon{
+  /* width: 5%; */
+  
+ fill: #1275b7;
+  width: auto;
+  height: 15.5px;
+}
+
+#speedometer {
+display: none;
+  position: fixed;
+  bottom: 0.4vh;
+  right: 2.1vw;
+  animation: fadeInUp .5s;
+  filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.8));
+}
+
+#speedometer .panel {
+  transform: rotate(115deg);
+  position: relative;
+  width: 270px;
+  height: 270px;
+}
+
+#speedometer .panel svg,
+div {
+  position: absolute;
+}
+
+#speedometer .panel #linecont {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  animation: rot 0.4s linear infinite;
+  transform: rotate(0deg);
+}
+
+#speedometer .panel .line {
+  width: 6px;
+  height: 5px;
+  background: #FE6F27;
+  top: 55%;
+  left: 83%;
+  border-radius: 50px;
+  border-right: solid 5px #FE6F27;
+}
+
+#speedometer .panel .currentspeed {
+  color: #fff;
+  transform: rotate(-115deg);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#speedometer .panel .currentspeed span.speed {
+  font-size: 58px;
+  margin-bottom: 50px;
+}
+
+#speedometer .panel .currentspeed span.metric {
+  font-size: 13px;
+  letter-spacing: 1px;
+  margin-bottom: -60px;
+  text-transform: uppercase;
+}
+
+#speedometer .stats {
+  color: #fff;
+  transform: rotate(-115deg);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#speedometer .stats .icons {
+  position: absolute;
+  bottom: 18px;
+  right: -10px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+  padding: 3px;
+}
+
+
+#speedometer .stats .icons svg {
+ position: relative;
+  height: 100%; 
+ width: 100%; 
+font-size: 20px;
+  margin: 0 5px;
+  fill: rgba(255, 255, 255, 0.5);
+}
+.muho{
+ 
+  fill: #F6831D;
+
+
+}
+
+#speedometer .stats #cruise {
+  position: absolute;
+  bottom: 100px;
+  right: 4px;
+  font-size: 30px;
+  width: 50px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 3px;
+  box-sizing: border-box;
+  font-size: 0.6rem;
+  color: rgba(0, 0, 0, 0.7);
+  letter-spacing: 0.5px;
+}
+#speedometer .stats #fuel {
+  position: absolute;
+  bottom: 70px;
+  right: 50px;
+  font-size: 30px;
+  width: 60px;
+  height: 20px;
+
+  letter-spacing: 0.5px;
+}
+#speedometer .stats #fuelicon {
+  position: absolute;
+  bottom: 70px;
+  right: 68px;
+  /* font-size: 20px; */
+  width: 12px;
+  height: 10px;
+
+  letter-spacing: 0.5px;
+}
+#cakamsizlere{
+  height: 150px;
+  width: 100px;
+  text-align: center;
+  margin: 0 auto;
+}
+#speedometer .stats #cruise:hover {
+  background: #1275b7;
+  color: white;
+  transition: ease-in-out 0.3s;
+}
+#nevarlan2 {
+  background: #1275b7;
+  color: white;
+  transition: ease-in-out 0.3s;
+}
+#muhittin {
+
+
+  font-size: 46px;
+  margin-bottom: 20px;
+
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translateY(100px);
+    opacity: 0;
+}
+  to {
+    transform: translateY(0);
+    opacity: 1;
+}
+}
+
+@keyframes fadeOutDown {
+  from {
+      transform: translateY(0);
+      opacity: 1;
+  }
+
+  to {
+      transform: translateY(100%);
+      opacity: 0;
+  }
+}
+
+/* .speedometer .stats .cruise {
+  position: absolute;
+  bottom: 7vh;
+  right: 40px;
+  font-size: 30px;
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 3px solid #fff;
+  border-radius: 100px;
+  box-sizing: border-box;
+} */
+

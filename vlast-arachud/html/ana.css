@@ -1,0 +1,126 @@
+@font-face { font-family: roboto-regular; 
+  src: url('WorkSans-SemiBold.ttf'); 
+} 
+
+
+body{
+  background-color: gray transparent !important ;
+  
+
+}
+
+#wrapper{
+  position: fixed;
+  right: -55px;
+  bottom: -80px;
+  width: 400px;
+  height: 400px;
+  z-index: 2;
+
+}
+ 
+#meter{
+  width: 100%;
+  height: 100%;
+  transform: rotate(180deg);
+  
+}
+
+#wrapper1{
+  position: fixed;
+ right: -55px;
+  bottom: -80px;
+  width: 400px;
+  height: 400px;
+  z-index: 1;
+  filter: url(#shadow);
+}
+ 
+#meter1{
+  width: 100%;
+  height: 100%;
+  transform: rotate(180deg);
+  filter: url(#shadow);
+}
+
+
+
+
+#wrapper3{
+  position: fixed;
+  right: -15px;
+  bottom: -76px;
+  width: 400px;
+  height: 400px;
+  z-index: 1;
+ 
+}
+ 
+#meter3{
+  width: 100%;
+  height: 100%;
+  transform: rotate(180deg);
+  filter: url(#prupl);
+  
+}
+
+
+.kmyazdir {
+  position:fixed;
+  width: 100px;
+  height: 100px;
+  
+  right: 90px;
+  bottom: 65px;
+  font-size: 50px;
+  font-family:roboto-regular;
+
+  color: white;
+  font-weight:600;
+  
+}
+
+
+.kmh{
+  position: absolute;
+  font-size: 20px;
+   bottom: 27px;
+  left: 46px;
+}
+
+.mesafe{
+  position: absolute;
+  font-size: 15px;
+   bottom: 90px;
+  right: 8px;
+}
+
+
+
+.konumlar{
+  position:fixed;
+  right: 270px;
+  bottom: 25px;
+  font-family:roboto-regular;
+  padding: 8px;
+  background-color: rgba(0, 0, 0, 0.864);
+  border-radius: 4px;
+  color: white;
+  font-weight: bold;
+  
+}
+
+
+.elemanlar{
+  position:fixed;
+  right: 170px;
+  bottom: 25px;
+  font-family:roboto-regular;
+  padding: 8px;
+  background-color: rgba(0, 0, 0, 0.864);
+  border-radius: 4px;
+  color: white;
+  font-size: 16px;
+  
+
+}

@@ -1,0 +1,112 @@
+
+<html>
+  
+
+<head>   
+   <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500;600;700;800&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+   <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+    <script
+      src="https://kit.fontawesome.com/346127c4c0.js"
+      crossorigin="anonymous"
+            ></script>
+            <link rel="stylesheet" type="text/css" href="main.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+       
+            
+<div id="speedometer">
+  
+  <div class="panel">
+    <svg height="270" width="270" >
+      <circle cx="135" cy="135" r="100.5" stroke="#fff"  stroke-dasharray="420" stroke-width="10" stroke-linecap="round" fill="transparent" filter="#shadow" class="speedind"/>
+      <!-- <circle id = "hellobitch" cx="135" cy="135" r="100.5" stroke-dashoffset= "135" stroke="#c20000" stroke-dasharray="420" stroke-width="10" stroke-linecap="round" fill="transparent" filter="#shadow" class="speedind"/> -->
+      </svg>
+      <!-- <svg height="270" width="270" >
+      <circle id = "hellobitch" cx="135" cy="135" r="100.5" stroke-dashoffset= "135" stroke="#fff" stroke-dasharray="420" stroke-width="10" stroke-linecap="round" fill="transparent" filter="#shadow" class="speedind"/>
+    </svg> -->
+    <div id="linecont">
+      <div class="line"></div>
+    </div>
+    <div class="currentspeed">
+      <div id="muhittin"> <span>85</span></div>
+      <span class="metric">KMH</span>
+    </div>
+    
+    <div class="stats">
+      <svg id="fuelicon"  version="1.1"
+      xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+      x="0px" y="0px" width="492px" height="494px" viewBox="0 0 492 494" style="enable-background:new 0 0 492 494;"
+      xml:space="preserve">
+  
+   <path  fill = "rgba(255, 255, 255, 0.4)" d="M476,143.2l-72-72v0l-32.1-32.1c-6.4-6.4-16.9-6.4-23.3,0c-6.4,6.4-6.4,16.9,0,23.3l55.4,55.4
+     v59.4c0,14.6,5.7,28.3,16,38.7l39,39v136.7c0,8.1-3.2,15.7-9,21.5c-5.8,5.8-13.4,9-21.5,9c-16.8,0-30.5-13.7-30.5-30.5V302
+     c0-30.3-24.7-55-55-55h-20v-79h0c0-0.1,0-0.3,0-0.4V56.9v-2.8C323,24.3,298.5,0,268.3,0H94C63.7,0,39,24.3,39,54.1v2.8v110.7
+     c0,0.1,0,0.3,0,0.4h0v272v16H19c-10.5,0-19,8.9-19,19.4V494h39h284h39v-18.6c0-10.5-8.5-19.4-19-19.4h-20v-16V280h20
+     c12.1,0,22,9.9,22,22v89.5c0,35,28.5,63.5,63.5,63.5c16.9,0,32.9-6.6,44.9-18.6c12-12,18.6-27.9,18.6-44.9V287.8V248v-66.2
+     C492,167.2,486.3,153.5,476,143.2z M72,167.6V56.9C72,45,82.1,35,94,35h174.3c11.7,0,21.7,10,21.7,21.9v110.7c0,3.2-0.7,6.2-2,9
+     c-3.4,7.1-11,12.5-19.7,12.5H94c-6.7,0-12.9-3.2-17-8C73.9,177.3,72,172.6,72,167.6z"/>
+   </svg>
+      <div id ="cruise">
+        H.SABIT
+       </div>
+      <div id ="fuel">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="gauge" viewBox="0 0 135 65" enable-background="new 0 0 135 65" xml:space="preserve" data-start="89" data-end="23" id="gauge-id">
+          <g>
+            <circle fill="#ccc" cx="32.3" cy="48.3" r="1.5" />
+            <circle fill="#ccc" cx="39.7" cy="30.3" r="1.5" />
+            <circle fill="#ccc" cx="53.5" cy="16.5" r="1.5" />
+            <circle fill="#ccc" cx="71.6" cy="9" r="1.5" />
+            <circle fill="#ccc" cx="91.1" cy="9" r="1.5" />
+            <circle fill="#ccc" cx="109.1" cy="16.5" r="1.5" />
+            <circle fill="#ccc" cx="122.9" cy="30.3" r="1.5" />
+            <circle fill="#ccc" cx="130.3" cy="48.3" r="1.5" />
+            <circle fill="#aaa" cx="35.1" cy="38.9" r="2.5" />
+            <circle fill="#aaa" cx="46" cy="22.7" r="2.5" />
+            <circle fill="#aaa" cx="62.2" cy="11.9" r="2.5" />
+            <circle fill="#aaa" cx="81.5" cy="8" r="2.5" />
+            <circle fill="#aaa" cx="100.4" cy="11.9" r="2.5" />
+            <circle fill="#aaa" cx="117" cy="22.7" r="2.5" />
+            <circle fill="#aaa" cx="127.5" cy="38.9" r="2.5" />
+            <circle fill="#aaa" cx="131.3" cy="58.1" r="2.5" />
+            <g class="needle">
+              <line fill="none" stroke="#D95857" stroke-width="4" stroke-linecap="round" stroke-miterlimit="10" x1="81.2" y1="58" x2="58" y2="58" />
+              <circle fill="#FFFFFF" stroke="#2B2436" stroke-width="3" stroke-miterlimit="10" cx="81.3" cy="58.1" r="5" />
+            </g>
+            <!-- <g opacity="1.85" >
+              <path  d="M14.9,21.4c0.2,0,0.4,0.1,0.6,0.2s0.2,0.4,0.2,0.6s-0.1,0.4-0.2,0.6s-0.3,0.2-0.6,0.2h-0.9v1.4 c0,1-0.3,1.8-1,2.6c-0.7,0.8-1.4,1.3-2.3,1.5v2.8H12c0,0,0.1,0,0.1,0s0.1,0,0.1,0s0.1,0,0.1,0c0,0,0,0.1,0,0.1v0.8 c0,0.2,0,0.3-0.1,0.5c-0.1,0.1-0.1,0.2-0.2,0.2h-2H3.5H1.4c-0.1,0-0.2-0.1-0.4-0.2c-0.2-0.2-0.3-0.3-0.3-0.4v-0.8 c0,0,0-0.1,0.1-0.1c0,0,0.1,0,0.1-0.1s0.1,0,0.2,0c0.1,0,0.1,0,0.2,0s0.1,0,0.1,0h1V20.3c0-0.4,0.4-0.6,1.1-0.6H10 c0.5,0,0.7,0.2,0.7,0.6v6.5c0.5-0.2,0.8-0.5,1.2-0.9c0.3-0.4,0.5-0.9,0.5-1.4V22c0-0.4,0.3-0.6,0.9-0.6H14.9z M4.1,21.4v2.5h5 v-2.5H4.1z M9.1,31.4v-5.8h-5v5.8H9.1z"
+              />
+            </g> -->
+            <path class="line2" fill="none" stroke="#bbb" stroke-width="6" stroke-linecap="round" d="M131.3,58.1
+          c0-27.6-22.4-50-50-50s-50,22.4-50,50" transform="scale(-1,1) translate(-162.7,0)"/>
+            <path class="line" fill="none" stroke="#ee6d12" stroke-width="6" stroke-linecap="round" d="M131.3,58.1
+          c0-27.6-22.4-50-50-50s-50,22.4-50,50" transform="scale(-1,1) translate(-162.7,0)"/>
+            <g class="fuel_end" fill="#FFFFFF" stroke-miterlimit="10" transform="rotate(80, 81.3, 58.1)">
+              <circle stroke="#2B2436" stroke-width="3" cx="31" cy="58" r="6" />
+              <circle stroke="#231F20" cx="31" cy="58" r="2.5" />
+            </g>
+            <circle class="fuel_start" fill="#FFFFFF" stroke="#bbb" stroke-width="2" stroke-miterlimit="10" cx="31" cy="58" r="3" transform="rotate(120, 81.3, 58.1)" />
+          </g>
+        </svg>
+      </div>
+      <div class="icons">
+        
+    <svg  xmlns="http://www.w3.org/2000/svg" width="20.005" height="20.005" viewBox="0 0 20.005 20.005" fill="#c20000"><defs><filter id="Path_500" width="20.005" height="20.005" x="0" y="0" filterUnits="userSpaceOnUse"><feOffset dy="1"/><feGaussianBlur result="blur" stdDeviation="1"/><feFlood flood-opacity="0.161"/><feComposite in2="blur" operator="in"/><feComposite in="SourceGraphic"/></filter></defs><g transform="translate(3 2)"><g data-name="Group 252" filter="url(#Path_500)" transform="translate(-3 -2)"><path id = "nevarlan"  d="M31.661 9.945a.244.244 0 00-.159-.2 19 19 0 00-2.717-.811 5.314 5.314 0 00-1.845-3.755l2.145-2a.23.23 0 000-.341l-.733-.683a.282.282 0 00-.367 0l-2.246 2.094a.652.652 0 01-.042-.226V3.6l.01-.006a2.116 2.116 0 00.207-.129l.017-.012a2.021 2.021 0 00.374-.35 1.874 1.874 0 00.352-.657l.009-.031a1.772 1.772 0 00.043-.2c0-.017.006-.034.009-.051a1.822 1.822 0 00.017-.236 2.08 2.08 0 00-4.15 0 1.77 1.77 0 00.017.236c0 .017.006.034.008.051a1.835 1.835 0 00.043.2l.009.031a1.874 1.874 0 00.352.657 2.014 2.014 0 00.374.35l.017.012a2.082 2.082 0 00.206.129l.01.006v.42a.746.746 0 01-.456.661 5.048 5.048 0 00-2.628 4.2 15.382 15.382 0 00-2.73.863.243.243 0 00-.15.2.236.236 0 00.113.219l1.037.656a.277.277 0 00.227.029c.509-.157 1-.294 1.482-.413a7.631 7.631 0 00.8 3.434.262.262 0 00.23.13h1.3a.264.264 0 00.221-.115.227.227 0 00.011-.235 5.221 5.221 0 01-.489-2.353 11.39 11.39 0 014.146 0 5.222 5.222 0 01-.489 2.353.226.226 0 00.011.235.264.264 0 00.221.115h1.3a.262.262 0 00.23-.13 7.633 7.633 0 00.8-3.435c.48.119.973.256 1.481.414a.28.28 0 00.082.012.274.274 0 00.145-.042l1.037-.656a.236.236 0 00.108-.217zm-5.089-4.423a4.787 4.787 0 011.684 3.294 19.828 19.828 0 00-3.274-.347h-.1c-.127 0-.255-.009-.382-.009-.374 0-.746.011-1.116.032zM23.4 5.115a1.224 1.224 0 00.741-1.093V3.8a2.15 2.15 0 001.037 0v.223a1.132 1.132 0 00.169.59l-4.254 3.961A4.47 4.47 0 0123.4 5.115zm4.212 8.407h-.742a6.542 6.542 0 00.383-2.415.246.246 0 00-.2-.235 11.9 11.9 0 00-4.784 0 .246.246 0 00-.2.235 6.542 6.542 0 00.383 2.415h-.741a7.462 7.462 0 01-.678-3.195q.144-.035.288-.066c.267-.055.53-.1.791-.145l.136-.021q.323-.05.641-.086l.175-.019q.312-.033.621-.052l.148-.01a15.433 15.433 0 013.162.154h.011q.408.061.825.143c.154.032.307.065.46.1a7.465 7.465 0 01-.68 3.197z" data-name="Path 500" transform="translate(-14.66 2)"/></g></g></svg>        
+        
+                <svg xmlns="http://www.w3.org/2000/svg" width="17.118" height="14.005" viewBox="0 0 17.118 14.005" fill="#123eb7"><g id = "nevartirrek" transform="translate(0 -42.667)"><g data-name="Group 258" transform="translate(0 42.667)"><g data-name="Group 257"><path id = "nevartirrek" d="M10.115 42.667H7a7 7 0 100 14.005h3.112a1.558 1.558 0 001.556-1.556V44.223a1.558 1.558 0 00-1.553-1.556z" data-name="Path 511" transform="translate(0 -42.667)"/><path d="M345.612 106.667h-3.89a.389.389 0 00-.389.389v.778a.389.389 0 00.389.389h3.89a.389.389 0 00.389-.389v-.778a.389.389 0 00-.389-.389z" data-name="Path 512" transform="translate(-328.884 -104.333)"/><path id = "nevartirrek" d="M345.612 213.333h-3.89a.389.389 0 00-.389.389v.778a.389.389 0 00.389.389h3.89a.389.389 0 00.388-.389v-.778a.389.389 0 00-.388-.389z" data-name="Path 513" transform="translate(-328.884 -207.108)"/><path id = "nevartirrek" d="M345.612 320h-3.89a.389.389 0 00-.389.389v.778a.389.389 0 00.389.389h3.89a.389.389 0 00.389-.389v-.778a.389.389 0 00-.389-.389z" data-name="Path 514" transform="translate(-328.884 -309.885)"/></g></g></g></svg>
+        
+<svg xmlns="http://www.w3.org/2000/svg" width="18.674" height="14.005" viewBox="0 0 18.674 14.005" fill="#c20000"><g id = "nevartirrek2" transform="translate(0 -64)"><g data-name="Group 264" transform="translate(0 64)"><path d="M17.507 69.447a1.168 1.168 0 00-1.167 1.167v1.167h-.778v-1.462a1.566 1.566 0 00-.456-1.1l-.872-.872a1.566 1.566 0 00-1.1-.456h-2.24v-1.557h1.166a1.167 1.167 0 000-2.334H7.392a1.167 1.167 0 000 2.334h1.167v1.556H7.1a1.566 1.566 0 00-1.1.456l-1.1 1.1h-.621a1.168 1.168 0 00-1.167 1.167v1.167h-.778v-1.166a1.167 1.167 0 00-2.334 0v4.668a1.167 1.167 0 102.334 0v-1.167h.778v1.167a1.168 1.168 0 001.167 1.167H4.9l1.1 1.1a1.566 1.566 0 001.1.456h5.258a1.566 1.566 0 001.1-.456l1.65-1.65a1.566 1.566 0 00.456-1.1v-.684h.778v1.167a1.167 1.167 0 102.334 0v-4.668a1.168 1.168 0 00-1.169-1.167z" data-name="Path 526" transform="translate(0 -64)"/></g></g></svg>
+        
+
+<i class="fas fa-car-battery"></i>
+<i id = "araciptal"class="fas fa-oil-can"></i>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+
+<script type="text/javascript" src="index.js"></script>
+</html>
